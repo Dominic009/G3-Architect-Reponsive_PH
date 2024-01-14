@@ -117,6 +117,7 @@ button {
 .text-section1 h2 {
     padding-right: 85px;
     margin-bottom: 15px;
+    font-size: 40px;
 }
 
 
@@ -150,10 +151,16 @@ button {
     box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.2);
     padding: 7px 15px;
     padding-top: 15px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+.text-container2 div:hover{
+    box-shadow: 2px 4px 10px 0px rgba(248, 150, 12, 0.844);
 }
 
 .architect-img img {
     width: 100%;
+    height: 100%;
 }
 
 .feature-title {
@@ -184,8 +191,15 @@ button {
 
 .text-container3{
     margin-bottom: 40px;
+    padding: 0 100px;
 }
 
+.text-container3 h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #FF900E;
+}
 .achievement-container{
     display: flex;
     justify-content: space-evenly;
@@ -241,10 +255,18 @@ footer{
 .rights p{
     background-color: rgba(255, 144, 14, 0.10);
     padding: 10px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
+
+
+
+
+
+
+
 
 
 /* Resposive for devices */
@@ -295,8 +317,8 @@ footer{
 
     .floating-area {
         background-color: #FF900E;
-        bottom: 400px;
-        right: 250px;
+        bottom: 0px;
+        right: 390px;
     }
 
 
@@ -310,4 +332,80 @@ footer{
         width: 60%;
         margin: 0 auto
     }
+
+    .text-container3{
+        padding: 0;
+    }
+
+
+
+    /* Footer section */
+    .text-container4 p{
+        padding: 0 30px;
+        text-align: justify;
+    }
+}
+
+
+/* Medium Screen */
+@media screen and (min-width: 660px) and (max-width: 1024px) {
+
+
+    .banner-content-container p {
+        padding: 0 10px;
+    }
+
+
+    /* Section-1 styles */
+    .section-1 {
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .section-1 h2,
+    p {
+        padding: 0;
+    }
+
+
+    /* Section 2 */
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .text-container2 {
+        width: 100%;
+        margin-bottom: -50px;
+    }
+
+    .floating-area {
+        background-color: #FF900E;
+        bottom: 0px;
+        right: 580px;
+    }
+
+
+    /* Section 3 */
+    .achievement-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .achievement-container div {
+        width: 60%;
+        margin: 0 auto
+    }
+
+    .text-container3{
+        padding: 0;
+    }
+
+
+
+    /* Footer section */
+    .text-container4 p{
+        padding: 0 40px;
+        text-align: justify;
+    } 
 }
