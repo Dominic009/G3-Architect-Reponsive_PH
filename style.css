@@ -156,6 +156,7 @@ button {
 }
 .text-container2 div:hover{
     box-shadow: 2px 4px 10px 0px rgba(248, 150, 12, 0.844);
+    scale: 105%;
 }
 
 .architect-img img {
